@@ -1,0 +1,105 @@
+/* *, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ html {
+   font-family: Poppins;
+}
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+ */
+.cards {
+	width: 320px;
+	border-radius: 20px;
+	background: #191a1d;
+	overflow: hidden;
+	background-image:
+		url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+	background-size: cover;
+}
+
+.cards header {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 20px 20px;
+	height: 130px;
+	background: linear-gradient(to left, #0009, #0009);
+}
+
+.cards header span.mdi {
+	color: #fff;
+	cursor: pointer;
+}
+
+.cards main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.cards main img {
+	height: 100px;
+	width: 100px;
+	margin-top: -80px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 14px;
+}
+
+.cards main h2 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 6px;
+}
+
+.cards main p {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.555);
+}
+
+.cards main .actions {
+	margin-top: 14px;
+	display: flex;
+}
+
+.cards main .actions button {
+	font-family: inherit;
+	border-radius: 40px;
+	cursor: pointer;
+	border: none;
+}
+
+.cards main .actions button.main {
+	width: 110px;
+	height: 32px;
+	background: #5458f7;
+	color: #fff;
+	font-weight: 600;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.cards main .actions button.main:hover {
+	background-color: #6c70f8;
+}
+
+.cards main .actions button.secondary {
+	width: 50px;
+	height: 32px;
+	background: #9597a1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cards main .actions button.secondary:hover {
+	background-color: #a3a4ad;
+}
